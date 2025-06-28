@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Navitems from "./navitems"
 
 const Navbar = () => {
   return (
@@ -9,18 +10,14 @@ const Navbar = () => {
                 <Image 
                 src="/images/logo.svg" 
                 alt="logo" 
-                width={100} 
-                height={100} 
-                className="w-10 h-10"
+                width={46} 
+                height={44} 
                 />
             </div>
         </Link>
         <div className="flex items-center gap-8">
-            <p>Home</p>
-            <p>Companions</p>
-            <p>My Journey</p>
-            <p>Profile</p>
-            <p>Subscription</p>
+          <Navitems />
+          <p>Sign In</p>
         </div>
     </nav>
   )
